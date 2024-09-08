@@ -1,10 +1,5 @@
 import requests
-
-
-#This is my new branch
-
-#test edit
-
+#test edit2
 url="https://www.weather.reports.up.com"
 response=requests.get(url)
 if requests.status_code==200:
