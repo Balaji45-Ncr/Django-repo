@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>List of employees is</h1>
+{% if show %}
+     <table border="1px"><thead>
+         <tr><th>REG NO</th>
+         <th>Name</th>
+         <th>Number</th>
+         <th>Sal</th>
+         <th>Add</th></tr>
+         </thead>
+         <tbody>
+         {% for i in show %}
+             <tr>
+                 <td>{{i.Empid}}</td>
+                 <td>{{i.Empname}}</td>
+                 <td>{{i.Empnum}}</td>
+                 <td>{{i.Empsal}}</td>
+                 <td>{{i.Empadd}}</td>
+
+
+             </tr>
+         {% endfor %}
+         </tbody>
+
+     </table>
+{% else %}
+      <h1> No data Found</h1>
+{% endif %}
+</body>
+</html>

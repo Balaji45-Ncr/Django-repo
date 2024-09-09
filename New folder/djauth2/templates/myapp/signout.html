@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'myapp/base.html' %}
+{% block body_block %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    {{form.as_p}}
+    {% csrf_token %}
+    <button type="submit" class="btn btn-success"> SIGNUP</button>
+</form>
+
+</body>
+{% endblock %}
+</html>
