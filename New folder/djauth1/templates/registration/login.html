@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends 'myapp/base.html' %}
+{% block body_block %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div  class='jumbotron' align="center">
+<form method="post" >
+  {{ form.as_p }}
+  {% csrf_token %}
+  <input type="submit" value="LOG IN">
+
+</form>
+    </div>
+</body>
+{% endblock %}
+</html>
